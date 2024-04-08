@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrateur</title>
+</head>
+<body>
+    <h1>Ajouter un administrateur</h1>
+    <form name="ajouter" method="POST" action="ajouter.php">
+        <div class="pageAdministrateur">
+            <div class="input"> 
+              <form name="contact" methode="POST" action="/routeAdmin.php?route='maj-admin'">
+                <label for="email">email : </label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Votre adresse email" required>
+                <br>
+                <label for="password">Mot de passe:</label>
+                <br>
+                <input type="password" name="password1" id="password1" placeholder="password" required>
+                <br>
+                <label for="password">Répéter mot de passe:</label>
+                <br>
+                <input type="password" name="password2" id="password2" placeholder="password" required>
+                <br>
+                <div class="boutons" id="boutons">
+                <label for="admin" class="admin" id="admin">Sélection Admin:</label> 
+                <input type="number" class="edition" size="5" min="1" max="16" placeholder="Edition">
+                <br>
+                <button class="modif" type="submit" name="modif" id="submit" disabled="disabled">Modification</button>
+                </div>
+              </form>
+            </div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation</title>
+</head>
+<body>
+    <h1>Ajouter une formation</h1>
+    <div class="input">
+        <form name="formation" method="POST" action="routeAdmin.php?route=creat-formation" enctype="multipart/form-data">
+            <label for="libelleFormation">Formation :</label>
+            <br>
+            <input type="text" name="libelleFormation" id="libelleFormation" placeholder="Libellé de la formation">
+            <br>
+            <label for="photoFormation">Fichier photo :</label>
+            <br>
+            <input type="file" name="photoFormation" id="photoFormation">
+            <br>
+            <label for="descriptionFormation">Description de la formation :</label>
+            <br>
+            <textarea name="descriptionFormation" id="descriptionFormation"></textarea>
+            <div class="boutons" id="boutons">
+                <label for="outil">Sélectionner un outil :</label>
+                <input type="number" class="edition" size="5" min="1" max="16" placeholder="Édition">
+                <br>
+                <button class="creat" type="submit" name="creat" id="creat" disabled="disabled">Création</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

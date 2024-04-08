@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outils</title>
+</head>
+<body>
+    <div class="input">
+        <form name="outil" method="POST" action="routeAdmin.php?route=creat-outil" enctype="multipart/form-data">
+            <label for="libelleOutil">Outil :</label>
+            <br>
+            <input type="text" name="libelleOutil" id="libelleOutil" placeholder="Libellé de l'outil">
+            <br>
+            <label for="photoOutil">Fichier photo de l'outil :</label>
+            <br>
+            <input type="file" name="photoOutil" id="photoOutil">
+            <br>
+            <label for="descriptionOutil">Description de l'outil :</label>
+            <br>
+            <textarea name="descriptionOutil" id="descriptionOutil"></textarea>
+            <br>
+            <div class="boutons" id="boutons">
+                <button class="creation" type="submit" name="creat" id="creat" disabled="disabled">Création</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+    

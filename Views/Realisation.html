@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisation</title>
+</head>
+<body>
+    <h1>Ajouter une réalisation</h1>
+    <form name="ajouter" method="POST" action="ajouter.php">
+        <div class="input">
+            <form name="realisation" methode="POST" action="routeAdmin.php?route='creat-rea'" enctype="multipart/form-data">
+                <label for="libellerealisation">Réalisation:</label>
+                <br>
+                <input type="text" name="libelleRealisation" id="libelleRealisation" placeholder="libelle de la realisation">
+                <br>
+                <label for="photoRealisation">Fichier photo de la realisation:</label>
+                <br>
+                <input type="file" name="photoRealisation" id="photoRealisation" placeholder="Fichier photo de la realisation" >
+                <br>
+                <label for="descriptionRealisation" class="descriptionRealisation" id="descriptionRealisation">Description de la réalisation</label> 
+                <br>
+                <textarea class = "descriptionRealisation" name="descriptionRealisation" id="descriptionRealisation"></textarea>
+                <br>
+                <div class="boutons" id="boutons">
+                     <button class="creation" type="submit" name="creation" id="submit" disabled="disabled">Création</button>
+                </div>
+            </form>
+        </div>
+    <div>
+</div> 
+</html>
+</body>
+
+
+
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom">
+        </div>
+        <button type="submit" name="submit" id="submit">Ajouter</button>
+    </form>
+</body>
+</html>
+    
